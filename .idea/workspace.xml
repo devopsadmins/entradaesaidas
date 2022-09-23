@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b966cdad-8063-465a-baae-4fb05a1fc195" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Registros Entrada e Saida.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Registros Entrada e Saida.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE ENTRADAS-RE-MODELO P1A (MOD1) - 102008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE ENTRADAS-RE-MODELO P1A (MOD1) - 112008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE ENTRADAS-RE-MODELO P1A (MOD1) - 122008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 012009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 022009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 102008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 112008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-1000_0108_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 122008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-2500_0169_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 032009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-2500_0169_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 042009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-2500_0169_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 052009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo-2500_0169_REGISTRO DE SAIDAS - RS - MODELO P2 (MOD2) - 062009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entradas.py" beforeDir="false" afterPath="$PROJECT_DIR$/entradas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saidas.py" beforeDir="false" afterPath="$PROJECT_DIR$/saidas.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EzrVDElyQGr9undSAsJ7T2kDSY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/everton/Projetos/DBC/Registros Entrada e Saida/main.py&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Registros Entrada e Saida" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venvnovo/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b966cdad-8063-465a-baae-4fb05a1fc195" name="Changes" comment="" />
+      <created>1663609274197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663609274197</updated>
+      <workItem from="1663609275980" duration="7787000" />
+      <workItem from="1663761452846" duration="5849000" />
+      <workItem from="1663794745906" duration="937000" />
+      <workItem from="1663895885637" duration="71000" />
+      <workItem from="1663946962237" duration="2770000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/saidas.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Registros_Entrada_e_Saida$main.coverage" NAME="main Coverage Results" MODIFIED="1663948663823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Registros_Entrada_e_Saida$entradas.coverage" NAME="entradas Coverage Results" MODIFIED="1663610203668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

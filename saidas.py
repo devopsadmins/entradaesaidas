@@ -14,11 +14,11 @@ class saidas:
     def ler(self):
         util = utils.utils()
         arquivos = util.recursiveReadDir(self._dir)
+        novosregistros = []
         for arquivo in arquivos:
             if 'SAIDA' in arquivo:
                 # dfs = tabula.read_pdf(arquivo, pages=1)
-                caminho = 'saidas-' + str(arquivo).replace(self._dir, '').replace('/', '').replace('.PDF',
-                                                                                                    '') + '.csv';
+                caminho = 'saidas-.xlsx';
                 print("Arquivo a processar: " + arquivo)
                 registros = []
                 with pdfplumber.open(arquivo) as file:
@@ -38,22 +38,24 @@ class saidas:
                                 nLinha += 1
                                 continue
                             if nLinha >= 13:
-                                registro = self.extract_value(linha, nRegistro, registros, pagina, cnpj, data_ini,
-                                                              data_fin)
-                                registros.append(registro)
+                                registro = linha
+                                registros.append(self.extract_value(linha, nRegistro, registros, pagina, cnpj, data_ini,
+                                                                    data_fin,arquivo))
+
                                 nLinha += 1
                                 nRegistro += 1
-        pandas.DataFrame(registros).to_excel(caminho, index=False)
 
-    def extract_value(self, line, nRegistro, registros, pagina, cnpj, data_ini, data_fin):
+                        for k, registro in enumerate(registros):
+                            novosregistros.append(
+                                self.extract_value_array(registro, k, registros))
+        with pandas.ExcelWriter(caminho) as writer:
+            pandas.DataFrame(novosregistros).to_excel(writer, sheet_name='Dados', index=False)
+
+    def extract_value(self, line, nRegistro, registros, pagina, cnpj, data_ini, data_fin,arquivo):
         return {
-            # "data_entrada": line[:10].strip() if line[:10].strip() != '' else
-            # registros[nRegistro - 1]['data_entrada'],
-            "especie": line[:5].strip() if line[12:20].strip() != '' else registros[nRegistro - 1][
-                'especie'],
+            "especie": line[:5].strip(),
             "serie": line[9:11].strip(),
-            'numero': line[12:20].strip() if line[25:35].strip() != '' else registros[nRegistro - 1][
-                'numero'],
+            'numero': line[12:20].strip(),
             "dia": line[25:27].strip(),
             "uf": line[28:30].strip(),
             "valor_contabil": line[31:47].strip().replace('.', ''),
@@ -67,8 +69,32 @@ class saidas:
             "outras": line[122:137].strip().replace('.', ''),
             "obs": line[137:].strip(),
             "pagina": pagina.page_number,
-            "cnjp": cnpj,
+            "cnpj": cnpj,
             "data_ini": data_ini,
-            "data_fin": data_fin
+            "data_fin": data_fin,
+            "arquivo":arquivo
         }
 
+    def extract_value_array(self, registro, nRegistro, registros):
+        return {
+            "especie": registro['especie'] if registro['especie'] != '' else registros[nRegistro - 1]['especie'],
+            "serie": registro['serie'] if registro['serie'] != '' else registros[nRegistro - 1]['serie'],
+            'numero': registro['numero'] if registro['numero'] != '' else registros[nRegistro - 1]['numero'],
+            "dia": registro['dia'],
+            "uf": registro['uf'],
+            "valor_contabil": registro['valor_contabil'] if registro['valor_contabil'] != '' else 0,
+            "codificacao_contabil": registro['codificacao_contabil'],
+            "codificacao_fiscal": registro['codificacao_fiscal'],
+            "icms-ipi": registro['icms-ipi'] if registro['icms-ipi'] != '' else 0,
+            "base_calculo": registro['base_calculo'],
+            "aliq": registro['aliq'],
+            "imposto_debitado": registro['imposto_debitado'],
+            "nao-tributada": registro['nao-tributada'],
+            "outras": registro['outras'],
+            "obs": registro['obs'],
+            "pagina": registro['pagina'],
+            "cnpj": registro['cnpj'],
+            "data_ini": registro['data_ini'],
+            "data_fin": registro['data_fin'],
+            "arquivo": registro['arquivo']
+        }
